@@ -7,10 +7,10 @@ from tkinter import filedialog
 import matplotlib.pyplot as plt
 
 # Tải lại mô hình đã huấn luyện
-model = tf.keras.models.load_model('architecture_VSCode.h5')
+model = tf.keras.models.load_model('architecture.h5')
 
 # Cấu hình đường dẫn tới thư mục chứa ảnh (thư mục đã được sử dụng khi huấn luyện)
-train_dir = 'D:/api_base_public-main/Image/architecture'  # Thay '/path_to_data' bằng đường dẫn thư mục huấn luyện ảnh của bạn
+train_dir = 'D:/api_base_public-main/Image/archi45_12'  # Thay '/path_to_data' bằng đường dẫn thư mục huấn luyện ảnh của bạn
 
 # Lấy danh sách các lớp (nhãn) từ tên thư mục trong thư mục huấn luyện
 class_labels = sorted(os.listdir(train_dir))
