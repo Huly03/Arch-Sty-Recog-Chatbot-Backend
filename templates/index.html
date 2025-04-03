@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        label,
+        h3 {
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .result {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .result pre {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-x: auto;
+        }
+
+        .result a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .result a:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .save-button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .save-button:hover {
+            background-color: #005f72;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Tìm kiếm bài báo phong cách kiến trúc</h2>
+
+        <!-- Text search input -->
+        <label for="query">Nhập từ khóa để tìm kiếm:</label>
+        <input type="text" id="query" placeholder="Phong cách kiến trúc">
+
+        <button onclick="searchByText()">Tìm kiếm</button>
+
+        <h3>Chọn ảnh để tìm kiếm:</h3>
+
+        <!-- File upload input -->
+        <input type="file" id="imageUpload" accept="image/*">
+
+        <button onclick="searchByImage()">Tìm kiếm</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        let matchedArticles = [];
+
+        function searchByText() {
+            let query = document.getElementById("query").value;
+            if (query.trim() === "") {
+                alert("Vui lòng nhập từ khóa tìm kiếm!");
+                return;
+            }
+
+            fetch(`/search_by_text?query=${encodeURIComponent(query)}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("result").innerHTML = `<p class="error">${data.error}</p>`;
+                    } else {
+                        matchedArticles = data.matched_articles; // Save the matched articles for later use
+                        let resultsHtml = "<h3>Kết quả tìm kiếm:</h3>";
+                        data.matched_articles.forEach((article, index) => {
+                            resultsHtml += `
+                                <div>
+                                    <h4><a href="${article.source_page}" target="_blank">${article.source_page}</a></h4>
+                                    <p>${article.description}</p>
+                                    <button class="save-button" onclick="saveArticle(${index}, 'text')">Lưu kết quả</button>
+                                </div>
+                                <hr>
+                            `;
+                        });
+                        document.getElementById("result").innerHTML = resultsHtml;
+                    }
+                })
+                .catch(error => {
+                    document.getElementById("result").innerHTML = `<p class="error">Lỗi: ${error}</p>`;
+                });
+        }
+
+        function searchByImage() {
+            let imageFile = document.getElementById("imageUpload").files[0];
+            if (!imageFile) {
+                alert("Vui lòng chọn ảnh để tìm kiếm!");
+                return;
+            }
+
+            let formData = new FormData();
+            formData.append("image", imageFile);
+
+            // Gửi ảnh tới Flask (POST request)
+            fetch('/search_by_image', {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        document.getElementById("result").innerHTML = `<p class="error">${data.error}</p>`;
+                    } else {
+                        let resultsHtml = "<h3>Kết quả tìm kiếm từ ảnh:</h3>";
+                        data.matched_articles.forEach((article, index) => {
+                            resultsHtml += `
+                                <div>
+                                    <h4><a href="${article.source_page}" target="_blank">${article.source_page}</a></h4>
+                                    <p>${article.description}</p>
+                                    <button class="save-button" onclick="saveArticle(${index}, 'image')">Lưu kết quả</button>
+                                </div>
+                                <hr>
+                            `;
+                        });
+                        document.getElementById("result").innerHTML = resultsHtml;
+                    }
+                })
+                .catch(error => {
+                    document.getElementById("result").innerHTML = `<p class="error">Lỗi: ${error}</p>`;
+                });
+        }
+        function saveArticle(index, type) {
+            let article = matchedArticles[index];
+
+            fetch(`/save_article`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    source_page: article.source_page,
+                    description: article.description
+                })
+            })
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = `article_${index + 1}.txt`;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => alert("Lỗi khi lưu bài viết: " + error));
+        }
+    </script>
+</body>
+
+</html>

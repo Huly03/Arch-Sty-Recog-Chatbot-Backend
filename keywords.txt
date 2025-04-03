@@ -1,0 +1,299 @@
+Phong cách kiến trúc Cổ điển Hy Lạp
+
+Phong cách kiến trúc Cổ điển La Mã
+
+Phong cách kiến trúc Gothic
+
+Phong cách kiến trúc Baroque
+
+Phong cách kiến trúc Phục hưng
+
+Phong cách kiến trúc Tân cổ điển
+
+Phong cách kiến trúc Art Nouveau
+
+Phong cách kiến trúc Hiện đại
+
+Phong cách kiến trúc Hậu hiện đại
+
+Phong cách kiến trúc Minimalism
+
+Phong cách kiến trúc Futurism
+
+Phong cách kiến trúc Công năng
+
+Phong cách kiến trúc Renaissance
+
+Phong cách kiến trúc Romanesque
+
+Phong cách kiến trúc Edwardian
+
+Phong cách kiến trúc Victorian
+
+Phong cách kiến trúc Neo-Gothic
+
+Phong cách kiến trúc Beaux-Arts
+
+Phong cách kiến trúc Art Deco
+
+Phong cách kiến trúc Bauhaus
+
+Phong cách kiến trúc International Style
+
+Phong cách kiến trúc Brutalism
+
+Phong cách kiến trúc Organic Architecture
+
+Phong cách kiến trúc Colonial
+
+Phong cách kiến trúc Mediterranean
+
+Phong cách kiến trúc Spanish Colonial Revival
+
+Phong cách kiến trúc Queen Anne
+
+Phong cách kiến trúc Shingle Style
+
+Phong cách kiến trúc Tudor Revival
+
+Phong cách kiến trúc Mid-century Modern
+
+Phong cách kiến trúc Prairie Style
+
+Phong cách kiến trúc Craftsman
+
+Phong cách kiến trúc Dutch Colonial
+
+Phong cách kiến trúc Ranch Style
+
+Phong cách kiến trúc Neoclassical Revival
+
+Phong cách kiến trúc Federal Style
+
+Phong cách kiến trúc Cape Cod
+
+Phong cách kiến trúc Georgian
+
+Phong cách kiến trúc Imperial
+
+Phong cách kiến trúc Byzantine
+
+Phong cách kiến trúc Ottoman
+
+Phong cách kiến trúc Moorish
+
+Phong cách kiến trúc Scandinavian
+
+Phong cách kiến trúc Russian Revival
+
+Phong cách kiến trúc Colonial Revival
+
+Phong cách kiến trúc Streamline Moderne
+
+Phong cách kiến trúc Ecole des Beaux-Arts
+
+Phong cách kiến trúc Deconstructivism
+
+Phong cách kiến trúc Brutalism
+
+Phong cách kiến trúc Neo-Colonial
+
+Phong cách kiến trúc High-Tech
+
+Phong cách kiến trúc Rustic
+
+Phong cách kiến trúc Art Moderne
+
+Phong cách kiến trúc Eclecticism
+
+Phong cách kiến trúc Transcendentalist
+
+Phong cách kiến trúc Regionalism
+
+Phong cách kiến trúc Baroque Revival
+
+Phong cách kiến trúc Futurist
+
+Phong cách kiến trúc Neo-Baroque
+
+Phong cách kiến trúc Postmodernism
+
+Phong cách kiến trúc Structuralism
+
+Phong cách kiến trúc New Formalism
+
+Phong cách kiến trúc High Modernism
+
+Phong cách kiến trúc Expressive Modernism
+
+Phong cách kiến trúc Traditionalism
+
+Phong cách kiến trúc Techno-Futurism
+
+Phong cách kiến trúc Urbanism
+
+Phong cách kiến trúc Minimalist Urbanism
+
+Phong cách kiến trúc Organic Minimalism
+
+Phong cách kiến trúc Glazed Modernism
+
+Phong cách kiến trúc Decorative Modernism
+
+Phong cách kiến trúc Gabled Roof
+
+Phong cách kiến trúc Hipped Roof
+
+Phong cách kiến trúc Flat Roof
+
+Phong cách kiến trúc Dome
+
+Phong cách kiến trúc Vaulted Ceiling
+
+Phong cách kiến trúc Timber Frame
+
+Phong cách kiến trúc Bamboo Architecture
+
+Phong cách kiến trúc Earth-Sheltered
+
+Phong cách kiến trúc High-Rise
+
+Phong cách kiến trúc Green Building
+
+Phong cách kiến trúc Sustainable Architecture
+
+Phong cách kiến trúc Solar Architecture
+
+Phong cách kiến trúc Glasshouse
+
+Phong cách kiến trúc Adaptive Reuse
+
+Phong cách kiến trúc Historic Preservation
+
+Phong cách kiến trúc Hypermodernism
+
+Phong cách kiến trúc Virtual Architecture
+
+Phong cách kiến trúc Light Architecture
+
+Phong cách kiến trúc Micro-architecture
+
+Phong cách kiến trúc Sensory Architecture
+
+Phong cách kiến trúc Post-Industrial
+
+Phong cách kiến trúc Neo-Egyptian
+
+Phong cách kiến trúc Classicism
+
+Phong cách kiến trúc English Country Style
+
+Phong cách kiến trúc Roman Bath Style
+
+Phong cách kiến trúc Slavic Folk Style
+
+Phong cách kiến trúc English Gothic
+
+Phong cách kiến trúc American Colonial
+
+Phong cách kiến trúc Norman
+
+Phong cách kiến trúc Palladian
+
+Phong cách kiến trúc Bavarian Style
+
+Phong cách kiến trúc Pueblo Revival
+
+Phong cách kiến trúc Craftsman Bungalow
+
+Phong cách kiến trúc Swiss Chalet
+
+Phong cách kiến trúc Shinto Architecture
+
+Phong cách kiến trúc Buddhist Architecture
+
+Phong cách kiến trúc Japanese Traditional
+
+Phong cách kiến trúc Korean Hanok
+
+Phong cách kiến trúc Chinese Imperial
+
+Phong cách kiến trúc Indian Temple Architecture
+
+Phong cách kiến trúc Islamic Architecture
+
+Phong cách kiến trúc Persian Architecture
+
+Phong cách kiến trúc Egyptian Revival
+
+Phong cách kiến trúc Aztec Architecture
+
+Phong cách kiến trúc Mayan Architecture
+
+Phong cách kiến trúc Incan Architecture
+
+Phong cách kiến trúc Russian Constructivism
+
+Phong cách kiến trúc Mongolian Architecture
+
+Phong cách kiến trúc Southeast Asian Architecture
+
+Phong cách kiến trúc Pacific Islander Architecture
+
+Phong cách kiến trúc Polynesian Architecture
+
+Phong cách kiến trúc Urban Loft
+
+Phong cách kiến trúc Industrial Style
+
+Phong cách kiến trúc Greco-Roman Style
+
+Phong cách kiến trúc Neoclassical Architecture
+
+Phong cách kiến trúc Greek Revival
+
+Phong cách kiến trúc American Gothic
+
+Phong cách kiến trúc Spanish Revival
+
+Phong cách kiến trúc Beaux-Arts Classicism
+
+Phong cách kiến trúc Federal Revival
+
+Phong cách kiến trúc Neo-Renaissance
+
+Phong cách kiến trúc North European Style
+
+Phong cách kiến trúc German Expressionism
+
+Phong cách kiến trúc Belgian Style
+
+Phong cách kiến trúc Spanish Modernism
+
+Phong cách kiến trúc French Rococo
+
+Phong cách kiến trúc Italian Renaissance
+
+Phong cách kiến trúc Tudor Gothic
+
+Phong cách kiến trúc French Colonial
+
+Phong cách kiến trúc Art Deco Streamline
+
+Phong cách kiến trúc Neo-Byzantine
+
+Phong cách kiến trúc Polynesian Revival
+
+Phong cách kiến trúc Gothic Revival
+
+Phong cách kiến trúc Eclectic Victorian
+
+Phong cách kiến trúc Eclétisme
+
+Phong cách kiến trúc Pomo
+
+Phong cách kiến trúc Neo-Italian Renaissance
+
+Phong cách kiến trúc High Victorian
+
+Phong cách kiến trúc Steampunk
